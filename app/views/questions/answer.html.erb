@@ -1,2 +1,27 @@
-<%= @answer %>
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p><%= params[:answer] %></p>
+          <footer class="blockquote-footer">You</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>  <%= @answer %></p>
+          <footer class="blockquote-footer">Your coach</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
 <p><%= link_to 'Ask a new question', ask_path %></p>
